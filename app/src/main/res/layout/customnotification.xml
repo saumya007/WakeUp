@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/relativelayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Upcoming Alarm"
+        android:id="@+id/Upcoming"
+        android:layout_marginStart="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dismiss"
+        android:id="@+id/Dismiss"
+
+        android:layout_below="@+id/Upcoming"
+        android:layout_alignStart="@+id/Upcoming" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_dismiss"
+        android:src="@drawable/alarmoffnew"
+        android:tint="@color/colorPrimary"
+        android:layout_alignBottom="@+id/Dismiss"
+        android:layout_toEndOf="@+id/Dismiss" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Snooze"
+        android:id="@+id/Snooze"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/Upcoming"
+        android:layout_toEndOf="@+id/notify_dismiss" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_snooze"
+        android:src="@drawable/ic_snooze_white_24dp"
+        android:tint="@color/colorPrimary"
+        android:layout_alignTop="@+id/Snooze"
+        android:layout_toEndOf="@+id/Snooze" />
+</RelativeLayout>

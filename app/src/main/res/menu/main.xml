@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/options">
+        <group android:id="@+id/group1" android:checkableBehavior="single">
+            <item android:id="@+id/submenu1" android:title="3DBird"/>
+            <item android:id="@+id/submenu2" android:title="Alert"/>
+            <item android:id="@+id/submenu3" android:title="Cesium"/>
+            <item android:id="@+id/submenu4" android:title="Oxygen"/>
+            <item android:id="@+id/submenu5" android:title="Carbon"/>
+            <item android:id="@+id/submenu6" android:title="Dingdong"/>
+            <item android:id="@+id/submenu7" android:title="Nokia"/>
+            <item android:id="@+id/submenu8" android:title="WakeUp"/>
+            <item android:id="@+id/submenu9" android:title="Helium"/>
+        </group>
+</menu>

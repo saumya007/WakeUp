@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1F2F3D"
+           >
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewlist1"
+                android:textSize="25sp"
+                android:text="9 : 10  AM"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="180dp"
+                android:clickable="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchlist1"
+                android:checked="false"
+                style="@style/SCBSwitch"
+                android:thumbTint="@color/white"
+                android:trackTint="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+            <com.samorgs.MultiSpinnerSearch
+                android:id="@+id/searchMultiSpinnerlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/switchlist1"
+                android:layout_toRightOf="@id/textviewlist1"
+                app:hintText="Multi Selection With Filter" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/searchMultiSpinnerlist"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:id="@+id/textViewlist7"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/searchMultiSpinnerlist"
+                android:layout_alignTop="@+id/searchMultiSpinnerlist"
+                android:layout_toStartOf="@+id/searchMultiSpinnerlist" />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

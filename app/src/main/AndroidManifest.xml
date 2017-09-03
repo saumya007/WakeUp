@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saumya.wakeup">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appikon"
+        android:label="Wake up"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.samorgs.MainActivity"
+           android:icon="@drawable/appikon"
+            android:label="Welcome to the app"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.samorgs.AlarmRecieve" />
+        <receiver android:name="com.samorgs.AlarmRecieveCrazy" />
+
+        <activity
+            android:name="com.samorgs.MathActivity"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/abc1"
+            android:label="Shake It Up"/>
+        <activity
+            android:name="com.samorgs.Mathproblems"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/imageas"
+            android:label="Apply the Math"/>
+        <activity
+            android:name="com.samorgs.Acceptandsnooze"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/abcd"
+            android:label="Use the sensors"/>
+        <activity
+            android:name="com.samorgs.IntroScreen"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/appikon"
+            android:label="App Tour"/>
+        <activity
+            android:name="com.samorgs.Main2Activity"
+            android:launchMode="singleTop"
+            android:icon="@drawable/appikon"
+            android:label="Your current alarms"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.samorgs.SnoozeAndStopAnimation"
+            android:icon="@drawable/appikon"
+            android:label="Snooze Or Stop"/>
+        <activity android:name="com.samorgs.DismissActivity"
+            android:icon="@drawable/appikon"
+            android:label="Dismissed"/>
+        <activity android:name="com.samorgs.SnoozeActivity"
+            android:icon="@drawable/appikon"
+            android:label="Snoozed"/>
+        <activity android:name="com.samorgs.SnoozeAndStopNormal"
+            android:icon="@drawable/appikon"
+            android:label="Snooze or Stop"/>
+        <activity android:name="com.samorgs.DismissNonCrazy"
+            android:icon="@drawable/appikon"
+            android:label="Dismissed"/>
+        <activity android:name="com.samorgs.SnoozeNonCrazy"
+            android:icon="@drawable/appikon"
+            android:label="Snoozed"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2F3D"
+    >
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:background="#1F2F3D">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:text="10"
+    android:id="@+id/inp1"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="30dp"
+    android:background="@color/white"
+    android:textColor="@color/red"
+    android:clickable="false"
+    android:layout_gravity="center_vertical" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="*"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/inp3"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        android:clickable="false"
+        android:layout_gravity="center_vertical" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="10"
+        android:clickable="false"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        android:id="@+id/inp2"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="answer here"
+        android:textColorHint="@color/white"
+
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/answeedit"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></FrameLayout>
+</LinearLayout>
